@@ -40,8 +40,8 @@ public class EditListMap : MonoBehaviour {
     }
     public void BackClick()
     {
-        //SceneManager.LoadScene("Menu");
-        Initiate.Fade("SelectPlanet", new Color(1, 1, 1), 5.0f);
+        SceneManager.LoadScene("Mode1");
+       // Initiate.Fade("SelectPlanet", new Color(1, 1, 1), 5.0f);
     }
     private void Update()
     {
@@ -62,8 +62,8 @@ public class EditListMap : MonoBehaviour {
     void ItemClick(GameObject obj,string id)
     {
         EditMapHexGenerator.mapId = id;
-        //SceneManager.LoadScene("CreateMap");
-        Initiate.Fade("CreateMap", new Color(1, 1, 1), 5.0f);
+        SceneManager.LoadScene("CreateMap");
+        //Initiate.Fade("CreateMap", new Color(1, 1, 1), 5.0f);
     }
     void DelItem(GameObject obj,string id)
     {

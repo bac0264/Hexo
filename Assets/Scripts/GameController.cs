@@ -62,8 +62,8 @@ public class GameController : MonoBehaviour {
     }
     public void BackClick()
     {
-        //SceneManager.LoadScene("SelectLevel");
-        Initiate.Fade("SelectLevel", new Color(1, 1, 1), 5.0f);
+        SceneManager.LoadScene("Mode1");
+       // Initiate.Fade("SelectLevel", new Color(1, 1, 1), 5.0f);
     }
     void FixedUpdate()
     {

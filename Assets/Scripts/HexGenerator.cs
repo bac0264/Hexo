@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class HexGenerator : MonoBehaviour {
     [SerializeField]
@@ -11,15 +12,17 @@ public class HexGenerator : MonoBehaviour {
     private GameObject TrianglePrefab;
     public List<GameObject> listTri;
     public GameObject[,] hexMatrix= new GameObject[GameSetting.cols, GameSetting.rows];
-    public static string mapId;
-    public static int level;
+    public int mapId;
     public static float HexHeight, HexWidth;
     public const int isWinning = 2;
     public bool isPlaying = true;
-    List<string> LPC = new List<string>(); // LPL = List planet complete
+    public Text level;
+
     // Use this for initialization
     void Start()
     {
+        mapId = PlayerPrefs.GetInt("LevelPickedUp");
+        level.text = "Level: " + (mapId + 1);
         // Load data đã chọn từ slect map
         HexHeight = HexPrefab.GetComponent<SpriteRenderer>().bounds.size.y * GameSetting.hexOffset;
         HexWidth = HexPrefab.GetComponent<SpriteRenderer>().bounds.size.x * GameSetting.hexOffset;
@@ -126,13 +129,6 @@ public class HexGenerator : MonoBehaviour {
     IEnumerator LevelComplete()
     {
         isPlaying = false;
-        int temp = PlayerPrefs.GetInt("PlayerLevel");
-        if (temp == level) //level đang chơi là level được mở cuối cùng;{
-        {
-            checkWin();
-            PlayerPrefs.SetInt("PlayerLevel", level + 1);
-
-        }
         foreach (GameObject obj in hexMatrix)
         {
             if (obj != null)
@@ -142,34 +138,7 @@ public class HexGenerator : MonoBehaviour {
         }
         yield return new WaitForSeconds(1f);
 
-        //SceneManager.LoadScene("SelectLevel");
-        Initiate.Fade("SelectLevel", new Color(1, 1, 1), 5.0f);
-    }
-    void checkWin()
-    {
-        if ((level+1) % isWinning == 0)
-        {
-            int x = (level+1)/isWinning;
-            PlayerPrefs.SetInt("CompleteLastPlanet", x);
-            //LPC.Add(x.ToString());
-            //foreach (GameObject _planet in Menu.instance.planet)
-            //{
-            //    if (_planet.GetComponent<Planet>().PlanetID == x)
-            //    {
-            //        saveListLPC(_planet);
-            //    }
-            //}
-        }
-    }
-    void saveListLPC(GameObject _planet)
-    {
-        string s = PlayerPrefs.GetString("PlanetComplete");
-        foreach (string id in LPC)
-        {
-            s += id + "|";
-        }
-        PlayerPrefs.SetString("PlanetComplete", s);
-        Menu.instance._MakeButton(_planet);
+        SceneManager.LoadScene("Mode1");
     }
     public GameObject getHex(Vector2 originPos, int direction)
     {

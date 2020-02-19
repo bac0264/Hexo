@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EditHex : MonoBehaviour {
     [SerializeField]
@@ -92,8 +93,8 @@ public class EditHex : MonoBehaviour {
 
     public void BackBtn()
     {
-        //SceneManager.LoadScene("ListMap");
-        Initiate.Fade("ListMap", new Color(1, 1, 1), 5.0f);
+        SceneManager.LoadScene("ListMap");
+        //Initiate.Fade("ListMap", new Color(1, 1, 1), 5.0f);
     }
     void FixedUpdate()
     {

@@ -6,14 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Planet/Scene/SelectPlanet.unity
-    guid: 5edf4d5ee2db75f4387af9acf693b97e
-  - enabled: 1
     path: Assets/Scenes/Menu.unity
-    guid: 8025399b0b0ce804cb28f455bf82082c
+    guid: 23af7775f37d43e4d86e3630157b36fd
   - enabled: 1
-    path: Assets/Scenes/SelectLevel.unity
-    guid: fa3efe683a742ff4b82252d0ddbb0a36
+    path: Assets/Scenes/Mode1.unity
+    guid: 7bf9dbdcc25bcb74988634932915f978
   - enabled: 1
     path: Assets/Scenes/MainGame.unity
     guid: 2cda990e2423bbf4892e6590ba056729
@@ -23,7 +20,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ListMap.unity
     guid: fe11e1843017a0840a0de6f8ab16bb2d
-  - enabled: 1
-    path: Assets/Scenes/ResetScene.unity
-    guid: 356033f675605c344b62497d190ae169
   m_configObjects: {}
