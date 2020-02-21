@@ -8,4 +8,8 @@ public class UIMenuManager : MonoBehaviour
     {
         SceneManager.LoadScene("Mode1");
     }
+    public void CreateMap()
+    {
+        SceneManager.LoadScene("ListMap");
+    }
 }

@@ -40,7 +40,7 @@ public class EditListMap : MonoBehaviour {
     }
     public void BackClick()
     {
-        SceneManager.LoadScene("Mode1");
+        SceneManager.LoadScene("Menu");
        // Initiate.Fade("SelectPlanet", new Color(1, 1, 1), 5.0f);
     }
     private void Update()

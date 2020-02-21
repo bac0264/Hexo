@@ -1,16 +1,18 @@
 fileFormatVersion: 2
-guid: 4301ea5fe8359e0468557c4275d0e6b5
+guid: 3da211d13b1d6674aab0ce9c9835c69a
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: UI sprite sheet_0
-    21300002: UI sprite sheet_1
-    21300004: UI sprite sheet_2
-    21300006: UI sprite sheet_3
-    21300008: UI sprite sheet_4
-    21300010: UI sprite sheet_5
-    21300012: UI sprite sheet_6
+  internalIDToNameTable:
+  - first:
+      213: 6335696837833913811
+    second: anhbac2_0
+  - first:
+      213: -3642694745375361111
+    second: anhbac2_1
+  - first:
+      213: -1088527689807591110
+    second: anhbac2_2
   externalObjects: {}
-  serializedVersion: 5
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -28,6 +30,8 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -38,7 +42,7 @@ TextureImporter:
     serializedVersion: 2
     filterMode: -1
     aniso: -1
-    mipBias: -1
+    mipBias: -100
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -50,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 50
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -63,7 +67,7 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - serializedVersion: 2
+  - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -74,7 +78,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -85,7 +90,20 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -96,17 +114,18 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UI sprite sheet_0
+      name: anhbac2_0
       rect:
         serializedVersion: 2
-        x: 31
-        y: 37
-        width: 58
-        height: 54
+        x: 50
+        y: 226
+        width: 60
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,19 +133,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3cc79911fc41cab4b961375c4339dc02
+      spriteID: e2a63a6fed7117b42b8181a089697fcb
+      internalID: 6335696837833913811
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI sprite sheet_1
+      name: anhbac2_1
       rect:
         serializedVersion: 2
-        x: 101
-        y: 37
-        width: 58
-        height: 54
+        x: 176
+        y: 88
+        width: 166
+        height: 163
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,19 +154,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06dacd92136e55b4db952912aa70681d
+      spriteID: 2844ba905db62bf478ca40f9deeb7659
+      internalID: -3642694745375361111
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI sprite sheet_2
+      name: anhbac2_2
       rect:
         serializedVersion: 2
-        x: 178
-        y: 37
-        width: 57
-        height: 54
+        x: 53
+        y: 216
+        width: 8
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,87 +175,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b784459a0574a249a41f3c65e4e3a74
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI sprite sheet_3
-      rect:
-        serializedVersion: 2
-        x: 254
-        y: 37
-        width: 58
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0493b53c1adbe1e44b68084e8ca5bc06
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI sprite sheet_4
-      rect:
-        serializedVersion: 2
-        x: 331
-        y: 35
-        width: 58
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2a6405a327e84914c8b0537bf5fb358b
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI sprite sheet_5
-      rect:
-        serializedVersion: 2
-        x: 406
-        y: 47
-        width: 32
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 70141dbdcf2242d4bbb01abe5a3eb069
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI sprite sheet_6
-      rect:
-        serializedVersion: 2
-        x: 443
-        y: 47
-        width: 32
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f9f6cf8458caded49b4f0a909c7ec8b1
+      spriteID: c87f01d0285d9b14d9b7f33c1e8c01b3
+      internalID: -1088527689807591110
       vertices: []
       indices: 
       edges: []
@@ -242,12 +184,16 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 8e0ebc480e52caa498429b838c7354cd
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
+    secondaryTextures: []
   spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
